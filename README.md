@@ -2,4 +2,6 @@
 Offering functionalities that are not yet available.
 
 ## Predictive Power Score _(currently working on this)_
-A score that helps identifying relationships linear and non-linear relations between features
+A score that helps identifying linear and non-linear relations between features/attributes.
+
+I was unable to find the option to explicitly mention categorical and numerical features in one of the libraries offering ppscore, which was leading to regression in case of categorical attribute. PyCustom.pps will rectify this issue (At Least that is the vision currently).
