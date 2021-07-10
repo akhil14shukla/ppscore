@@ -1,2 +1,5 @@
 # PyCustom
-Python Functions related to Machine Learning, to offer functionalities that are not yet offered by the libraries
+Offering functionalities that are not yet available.
+
+## Predictive Power Score _(currently working on this)_
+A score that helps identifying relationships linear and non-linear relations between features
