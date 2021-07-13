@@ -16,7 +16,7 @@ def pps(df,categorical_features=None,numerical_features=None):
     pps_df=pd.DataFrame(columns=columns)
     for i in df.columns:
         for j in df.columns:
-            if(j in categorical_features or type(df[j])==str):
+            if(((categorical_features)!=None and j in categorical_features) or type(df[j])==str):
                 model = DecisionTreeClassifier()
                 lab_enc = preprocessing.LabelEncoder()
                 label_encoded_y = np.array(lab_enc.fit_transform(df[j])).reshape(-1,1)
@@ -40,8 +40,8 @@ def pps(df,categorical_features=None,numerical_features=None):
                 naive_mae = metrics.mean_absolute_error(y_test, median)
                 y_pred=model.predict(x_test)
                 mae=metrics.mean_absolute_error(y_test,y_pred)
-                train_score=model.score(x_train,y_train)
+                train_score=mean_absolute_error(y_train,model.predict(x_train))
                 pps_score = max(0,1 - mae/naive_mae)
-                pps_df=pps_df.append({"Feature":i,"Target":j,"PPS":pps_score,"Type of Prediction":"Regression","Cross-Val Score":cv_score,"Training Score":train_score,"Naive-Baseline Score":naive_mae,"Model":"DecisionTreeRegressor()"},ignore_index=True)
+                pps_df=pps_df.append({"Feature":i,"Target":j,"PPS":pps_score,"Type of Prediction":"Regression","Cross-Val Score":mae,"Training Score":train_score,"Naive-Baseline Score":naive_mae,"Model":"DecisionTreeRegressor()"},ignore_index=True)
     
     return pps_df
