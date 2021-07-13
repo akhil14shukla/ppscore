@@ -9,6 +9,7 @@ import ppscore as pps
 from sklearn import metrics               
 from sklearn import preprocessing
 from sklearn import utils
+from sklearn.metrics import mean_absolute_error
 
 
 def pps(df,categorical_features=None,numerical_features=None):
