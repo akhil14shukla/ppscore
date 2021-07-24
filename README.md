@@ -1,5 +1,6 @@
 # PyCustom
-Offering functionalities that are not yet available.
+Offering functionalities that are not yet available.<br><br>
+_**Consider Starring the Repo, if you find it useful**_ <br>
 
 ## Predictive Power Score _(currently working on this)_
 A score that helps identifying linear and non-linear relations between features/attributes.
