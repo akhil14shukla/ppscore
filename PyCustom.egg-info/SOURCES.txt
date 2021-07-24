@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+ppscore.py
+setup.py
+PyCustom/__init__.py
+PyCustom/ppscore.py
+PyCustom.egg-info/PKG-INFO
+PyCustom.egg-info/SOURCES.txt
+PyCustom.egg-info/dependency_links.txt
+PyCustom.egg-info/top_level.txt
