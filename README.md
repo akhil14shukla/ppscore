@@ -9,7 +9,7 @@ Because I was unable to find the option to explicitly mention categorical and nu
 
 To install this library use:
 ```
-pip install ppscore
+pip install pps-python
 ```
 
 To use Predictive Power Score, import the following:  <br>

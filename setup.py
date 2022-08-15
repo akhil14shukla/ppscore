@@ -6,7 +6,7 @@ with open("README.md", "r") as readme_file:
 requirements = ["pandas>=1.0.0,<2.0.0", "scikit-learn >= 0.20.2, < 1.0.0"]
 
 setup(
-    name='ppscore',
+    name='pps-python',
     packages=find_packages(),
     version='0.0.4',
     description='Customised Python Functions for calculating Predictive Power Score',
