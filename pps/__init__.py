@@ -1,1 +1,1 @@
-from ppscore.ppscore import pps
+from pps.ppscore import pps

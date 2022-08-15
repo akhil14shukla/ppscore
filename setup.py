@@ -3,12 +3,12 @@ from setuptools import find_packages, setup
 with open("README.md", "r") as readme_file:
     readme = readme_file.read()
 
-requirements = ["pandas>=1.0.0,<2.0.0", "scikit-learn >= 0.20.2, < 1.0.0"]
+requirements = ["pandas>=1.0.0,<2.0.0", "scikit-learn >= 0.20.2, < 1.0.0","numpy"]
 
 setup(
     name='pps-python',
     packages=find_packages(),
-    version='0.0.5',
+    version='0.0.7',
     description='Customised Python Functions for calculating Predictive Power Score',
     long_description=readme,
     long_description_content_type="text/markdown",
