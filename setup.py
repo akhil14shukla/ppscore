@@ -6,13 +6,13 @@ with open("README.md", "r") as readme_file:
 requirements = ["pandas>=1.0.0,<2.0.0", "scikit-learn >= 0.20.2, < 1.0.0"]
 
 setup(
-    name='PyCustom',
+    name='ppscore',
     packages=find_packages(),
-    version='0.0.3',
-    description='Customised Python Functions',
+    version='0.0.4',
+    description='Customised Python Functions for calculating Predictive Power Score',
     long_description=readme,
     long_description_content_type="text/markdown",
-    url="https://github.com/akhil14shukla/PyCustom",
+    url="https://github.com/akhil14shukla/ppscore",
     author='Akhil Shukla (akhil14shukla)',
     license='GNU v3.0',
     install_requires=requirements,
