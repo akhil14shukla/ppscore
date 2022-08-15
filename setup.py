@@ -8,7 +8,7 @@ requirements = ["pandas>=1.0.0,<2.0.0", "scikit-learn >= 0.20.2, < 1.0.0","numpy
 setup(
     name='pps-python',
     packages=find_packages(),
-    version='0.0.7',
+    version='0.0.8',
     description='Customised Python Functions for calculating Predictive Power Score',
     long_description=readme,
     long_description_content_type="text/markdown",
