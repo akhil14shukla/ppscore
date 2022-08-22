@@ -14,3 +14,6 @@ To use Predictive Power Score, import the following:  <br>
 ```
 from pps.ppscore import pps
 ```
+<!---
+machine learning, python machine learning functionality
+-->
